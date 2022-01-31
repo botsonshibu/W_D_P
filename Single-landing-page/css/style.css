@@ -1,0 +1,89 @@
+/* 
+- Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6) */
+
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Inter);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:hsl(0, 0%, 100%);
+
+}
+body{
+    /* font-size: 15px; */
+    background-color:lightgray;
+}
+
+.container{
+    background-color: hsl(233, 47%, 7%);
+    height:80vh;
+    width: 80%;
+    margin: 4.5em auto;
+    position: relative;
+    
+}
+span{
+    color:hsl(277, 64%, 61%);
+}
+
+.container-2{
+    background-color:  hsl(244, 38%, 16%);
+    height: 70%;
+    width: 80%;
+    position: absolute;
+    top:15%;
+    left:9.5%;
+    border-radius: 10px;
+    display: flex;
+}
+
+
+h1,p{
+    
+    max-width: 70%;
+    margin: 2em auto .8em auto;
+    font-family: 'Inter', sans-serif;
+}
+p{
+    margin-top: 3em;
+    font-size: .9rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    
+}
+
+.right-column{
+    
+    overflow: hidden;
+    min-width: 50%;
+    background-color:hsl(277, 64%, 61%);
+  background-blend-mode: multiply;
+    background-image:url(/My-website_files/image-header-desktop.jpg);
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.data-values{
+    margin: 5em auto .8em auto;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    /* outline:1px solid red; */
+    
+}
+.data-values span{
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}

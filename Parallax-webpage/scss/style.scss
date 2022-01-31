@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Dosis:wght@500&family=Kristi&display=swap');
+$color-1:#f4f4f4;
+$color-2:#282e34;
+$color-3:#666;
+$color-4:#ddd;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    margin-bottom: 2em;
+
+}
+.p-img-1,
+.p-img-2,
+.p-img-3
+{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.p-img-1{
+    min-height: 100vh;
+    background-image: url(/images/winter-2.jpg);
+}
+
+.p-img-2{
+    background-image: url(/images/summer.jpg);
+    min-height: 400px;   
+}
+.p-img-3{
+    background-image:url(/images/spring.jpg) ;
+    min-height: 400px;
+}
+
+section{
+    padding: 2em;
+    text-align: center;
+    background: transparent;
+}
+h1{
+    margin-bottom: .5em;
+    font-family: 'Dosis',sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.section-1{
+    background-color: #222;
+    color:white;
+}
+
+.section-2{
+    background-color: $color-4;
+}
+
+.section-3{
+    background-color: white;
+    color: black;
+    opacity: .9;
+}
+
+.text{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    color:$color-1;
+    font-size: 3rem;
+    letter-spacing: 8px;
+    text-transform:capitalize;
+    font-family: 'Comforter',sans-serif;
+    }
+
+    span{
+        border-top:2px solid white;
+        border-bottom:2px solid white;
+    }
